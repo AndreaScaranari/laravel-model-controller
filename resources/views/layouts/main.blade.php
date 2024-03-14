@@ -15,7 +15,7 @@
 <body>
     @include('includes.header')
 
-    <main>
+    <main class="container py-3">
         @yield('main-content')
     </main>
 
