@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MoviesController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +18,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/movies', MoviesController::class)->name('movies');
+Route::get('/about', AboutController::class)->name('about');
+Route::get('/contacts', ContactsController::class)->name('contacts');
